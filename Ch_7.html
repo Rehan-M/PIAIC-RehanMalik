@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Ch 7 Assignment</title>
+	</head>
+	<body>
+		<h1>Forms</h1>
+
+		<form action="http://www.example.com/login.php">
+			<fieldset style="border: 2px solid #5d4d4d; width: 1540px">
+				<legend><b>Your Details:</b></legend>
+				<div>
+					Name:
+					<input type="text" width="15" maxlength="40" required />
+					<br />
+					<br />
+
+					Email:
+					<input type="email" width="15" maxlength="40" required />
+				</div>
+			</fieldset>
+			<br />
+			<br />
+			<fieldset style="border: 2px solid #5d4d4d; width: 1540px">
+				<legend><b>Your Review:</b></legend>
+				<div>
+					<p>
+						How did you hear about us?
+						<select name="mediums">
+							<option value="Google">Google</option>
+							<option value="FaceBook">FaceBook</option>
+							<option value="InstaGram">Instagram</option>
+							<option value="Tweeter">Tweeter</option>
+							<option value="BillBoard">BillBoard</option>
+						</select>
+					</p>
+				</div>
+
+				<div>
+					<p>
+						Would you Visit again? <br />
+						<label
+							><input type="radio" name="yes/no/maybe" value="Y" />Yes</label
+						>
+						<label
+							><input type="radio" name="yes/no/maybe" value="n" />No</label
+						>
+						<label
+							><input type="radio" name="yes/no/maybe" value="m" />Maybe</label
+						>
+					</p>
+				</div>
+
+				<div>
+					<p>Comments:</p>
+					<textarea name="comments" rows="5" cols="50"></textarea>
+				</div>
+				<br />
+				<div>
+					<input type="checkbox" /> <label>Sign me up for email updates</label>
+				</div>
+				<br />
+				<input type="submit" value="Submit review" />
+			</fieldset>
+		</form>
+	</body>
+</html>
